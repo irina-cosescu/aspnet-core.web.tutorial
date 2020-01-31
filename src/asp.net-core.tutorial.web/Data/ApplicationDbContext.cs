@@ -72,6 +72,8 @@ namespace asp.net_core.tutorial.web.Data
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        [Required] [StringLength(5,MinimumLength =3)]
+        [Display(Name="")]
         public string Name { get; set; }
 
         public string Description { get; set; }
